@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pedir Serviço — FixHoje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="index.html">FixHoje</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="client.html">Sou Cliente</a>
+      <a href="provider.html">Quero Ser Prestador</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Pedir Serviço (Simulado)</h2>
+    <form id="requestForm" class="card">
+      <label>Nome do cliente
+        <input type="text" id="clientName" required placeholder="Seu nome">
+      </label>
+      <label>Telefone (WhatsApp)
+        <input type="text" id="clientPhone" placeholder="(54) 9xxxx-xxxx">
+      </label>
+      <label>Endereço
+        <input type="text" id="clientAddress" placeholder="Rua, número, bairro, Caxias do Sul">
+      </label>
+      <label>Categoria
+        <select id="category">
+          <option value="pintura">Pintura</option>
+          <option value="eletrica">Elétrica básica</option>
+          <option value="hidraulica">Hidráulica</option>
+          <option value="reparos">Pequenos reparos</option>
+        </select>
+      </label>
+      <label>Descrição do serviço / foto (opcional)
+        <textarea id="description" rows="4" placeholder="Descreva o que precisa"></textarea>
+      </label>
+      <label>Horario desejado
+        <input type="datetime-local" id="when">
+      </label>
+      <div class="center">
+        <button class="btn" type="submit">Enviar solicitação</button>
+      </div>
+    </form>
+
+    <section id="status" class="card hidden">
+      <h3>Status da solicitação</h3>
+      <p id="statusText">Aguardando prestador aceitar...</p>
+      <div id="offerBox" class="hidden">
+        <p><strong>Prestador:</strong> <span id="offerName"></span></p>
+        <p><strong>Preço sugerido:</strong> R$ <span id="offerPrice"></span></p>
+        <button class="btn" id="confirmJob">Confirmar e pagar</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">Piloto FixHoje • Caxias do Sul</footer>
+  <script src="app.js"></script>
+</body>
+</html>

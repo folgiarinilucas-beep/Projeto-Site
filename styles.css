@@ -1,0 +1,20 @@
+* { box-sizing: border-box; font-family: Inter, system-ui, Arial, sans-serif; }
+body { margin:0; background:#f6f7fb; color:#223; }
+.topbar { background:#154; color:#fff; padding:14px 18px; display:flex; align-items:center; justify-content:space-between; }
+.topbar h1 { margin:0; font-size:20px; }
+.topbar nav a { color:#fff; margin-left:12px; text-decoration:none; font-weight:600; }
+.container { max-width:980px; margin:28px auto; padding:0 16px; }
+.hero { background:#fff; padding:22px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.hero h2 { margin:0 0 8px 0; }
+.cta { margin-top:12px; }
+.btn { display:inline-block; padding:10px 14px; border-radius:8px; background:#154; color:#fff; text-decoration:none; font-weight:700; }
+.btn.outline { background:transparent; color:#154; border:2px solid #154; margin-left:10px; }
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:18px; }
+.card { background:#fff; padding:16px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.04); margin-top:14px; }
+label { display:block; margin-bottom:10px; font-weight:600; }
+input[type=text], input[type=number], input[type=datetime-local], select, textarea { width:100%; padding:10px; border:1px solid #d6dbe6; border-radius:6px; margin-top:6px; }
+.footer { text-align:center; padding:16px; color:#666; margin-top:24px; }
+.hidden { display:none; }
+.center { text-align:center; margin-top:10px; }
+.demo-links a { margin-right:8px; }
+ul, ol { padding-left:18px; }

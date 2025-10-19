@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prestador — FixHoje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="index.html">FixHoje</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="client.html">Sou Cliente</a>
+      <a href="provider.html">Quero Ser Prestador</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Cadastro / Painel do Prestador (Simulado)</h2>
+    <form id="providerForm" class="card">
+      <label>Nome ou Nome da empresa
+        <input type="text" id="provName" required placeholder="Ex: João Pinturas">
+      </label>
+      <label>CPF / CNPJ
+        <input type="text" id="provDoc" placeholder="000.000.000-00">
+      </label>
+      <label>Serviços (separe por vírgula)
+        <input type="text" id="provServices" placeholder="pintura, elétrica, hidráulica">
+      </label>
+      <label>Área de atuação (bairro / raio)
+        <input type="text" id="provArea" placeholder="Bairros atendidos">
+      </label>
+      <label>Preço médio por hora (R$)
+        <input type="number" id="provPrice" placeholder="Ex: 60">
+      </label>
+      <div class="center">
+        <button class="btn" type="submit">Cadastrar / Ativar</button>
+      </div>
+    </form>
+
+    <section id="jobs" class="card hidden">
+      <h3>Solicitações disponíveis</h3>
+      <div id="jobList"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">Piloto FixHoje • Caxias do Sul</footer>
+  <script src="app.js"></script>
+</body>
+</html>

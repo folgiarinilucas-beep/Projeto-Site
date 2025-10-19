@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin — FixHoje</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1><a href="index.html">FixHoje</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="client.html">Sou Cliente</a>
+      <a href="provider.html">Quero Ser Prestador</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Painel Administrativo (Simulado)</h2>
+    <section class="card">
+      <h3>Métricas</h3>
+      <ul id="metrics">
+        <li>Prestadores cadastrados: <span id="mProviders">0</span></li>
+        <li>Serviços solicitados: <span id="mRequests">0</span></li>
+        <li>Comissão acumulada (simulada): R$ <span id="mCommission">0</span></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h3>Prestadores</h3>
+      <div id="provTable">Nenhum prestador cadastrado (simulado)</div>
+    </section>
+  </main>
+
+  <footer class="footer">FixHoje Admin</footer>
+  <script src="app.js"></script>
+</body>
+</html>
